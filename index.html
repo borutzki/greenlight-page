@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GreenLight</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- czcionki google -->
+        <link href="https://fonts.googleapis.com/css?family=Audiowide|Russo+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+        <!-- css -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/css.css">
+    </head>
+
+    <body>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="js/js.js"></script>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="showNavbar">
+        </div>
+        <!-- pasek nawigacji -->
+        <nav class="navbar sticky-top m-0 px-2" id="pasekNawigacji">
+            <div class="container-fluid justify-content-between mx-3 mx-sm-5 mx-md-3 mx-lg-4 mx-xl-5 p-0">
+                <a class="navbar-brand" href="#" id="logo"><h3>GreenLight</h3></a>
+                <button class="btn btn-primary"  id="playlistButton" type="button" data-toggle="collapse" data-target="#playlistPlayer" aria-expanded="false" aria-controls="playlistPlayer">
+                    <span class="d-none d-md-inline-block">Show playlist&nbsp;</span>
+                    <img src="img/Spotify_Icon_RGB_Green.png" alt="" width="25px" height="25px">
+                </button>
+                  
+            </div>
+            <!-- Navbar content -->
+        </nav>
+        
+        
+        
+        <!-- całość stronki -->
+            <!-- kontener 1 -->
+            <div  class="container-fluid m-0 mt-3 px-2 py-2 py-md-4">
+                <div class="row justify-content-between justify-content-md-around justify-content-lg-around align-items-stretch p-0 m-0">
+                    <div class="col-md-5 text-center poleTekstowe order-md-1 m-3 mx-sm-5 my-sm-4 mx-md-3 my-md-2 mx-lg-4 my-lg-3 mx-xl-5 my-xl-4" id="header">
+                            <div>
+                                <h1>GreenLight</h1>
+                                <h1>GreenLight</h1>
+                                <h1 class="d-md-none d-xl-block">GreenLight</h1>
+                                <h1 class="d-md-none d-xl-block">GreenLight</h1>
+                                <h1>GreenLight</h1>
+                            </div>
+                    </div>
+                    <div class="col-md-5 spotifyPlayerBox order-md-2 m-3 mx-sm-5 my-sm-4 mx-md-3 my-md-2 mx-lg-4 my-lg-3 mx-xl-5 my-xl-4" id="spotifyPlayer1">                        
+                            <div class="spotifyPlayer">
+                                <iframe src="https://open.spotify.com/embed/track/0eB9O5XdPzpvQLGKpZTy4R" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            </div>   
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- kontener 2 -->
+            <div class="container-fluid m-0 px-2 py-2 py-md-4">
+                <div class="row justify-content-between justify-content-md-around justify-content-lg-around align-items-stretch p-0 m-0" >
+                    <div class="col-md-5 spotifyPlayerBox order-md-1 order-2 m-3 mx-sm-5 my-sm-4 mx-md-3 my-md-2 mx-lg-4 my-lg-3 mx-xl-5 my-xl-4" id="spotifyPlayer2">
+                        <div class="spotifyPlayer">
+                            <iframe src="https://open.spotify.com/embed/track/1Lx5vOtUBAjfH0286gn4oi" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </div>                      
+                    </div>
+                    <div class="col-md-5 order-1 order-md-2 m-3 mx-sm-5 my-sm-4 mx-md-3 my-md-2 mx-lg-4 my-lg-3 mx-xl-5 my-xl-4" id="octagonBg">
+                        <div id="octagon">
+                            <p id="octagonText">Stop listening Alone!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- kontener 3 -->
+            <div class="container-fluid m-0 px-2 py-2 py-md-4">
+                <div class="row justify-content-between justify-content-md-around justify-content-lg-around align-items-stretch p-0 m-0">
+                    <div class="col-md-5 poleTekstowe order-md-1 m-3 mx-sm-5 my-sm-4 mx-md-3 my-md-2 mx-lg-4 my-lg-3 mx-xl-5 my-xl-4">
+                        <div id="descGradient">
+                            <div class="text-justify p-5" id="descText">We're just about to start international project. Our goal is to rescue music from being seen as alienating, dividing and overwhelming. Just wait for us to begin. You and your doomer friends are going to be pleased. Stay tuned!</div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 order-md-1 order-2 spotifyPlayerBox m-3 mx-sm-5 my-sm-4 mx-md-3 my-md-2 mx-lg-4 my-lg-3 mx-xl-5 my-xl-4" id="spotifyPlayer3">
+                        <div class="spotifyPlayer">
+                            <iframe src="https://open.spotify.com/embed/track/6fhH6tRpDX77lDmqBy9LF7" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+            
+        <!-- kontener 4, stopka -->
+        <div class="container-fluid p-3" id="stopka">
+            <p>&copy <img class="logoBorutzki" src="img/borutzki-logo.png">2020</p>
+        </div>
+
+        <div class="mt-5" id="koniecStrony"></div>
+
+        <div class="container-fluid collapse fixed-bottom m-0 p-0" id="playlistPlayer">
+                    <iframe src="https://open.spotify.com/embed/playlist/1FRHoFGV3yDQw8THiEQxMu" frameborder="0" allowtransparency="true" allow="encrypted-media" id="playlist"></iframe>
+        </div>
+    </body>
+</html>

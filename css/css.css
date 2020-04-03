@@ -1,0 +1,282 @@
+/* 
+kolory:
+szary: 525252
+zielonkawy: 9affa6
+
+tasklista: 
+
+-zrobić cień rzucany przez navbar
+-gradientowy lub przezroczysty kolorek navbara
+
+*/
+
+
+/* 
+czcionki
+font-family: 'ZCOOL KuaiLe', cursive;
+font-family: 'Russo One', sans-serif;
+ */
+
+ /* kolumny - ustawienie cienia i animacji */
+.col-md-5{
+    box-shadow: 0px 0px 50px 50px rgba(0,0,0,0.75); 
+    border: 3px solid #525252;
+    border-radius: 5px;
+    transition: width 0.5s linear, height 0.5s linear;
+}
+
+.row{
+    background-color: transparent;
+}
+
+body{
+    background-color: #9affa6;
+    padding-bottom: 0;
+}
+
+#fullPage{
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 100px 100px rgba(0,0,0,0.75);
+}
+
+.navbar{
+    transition: top 0.5s ease;
+    background-color: #525252;
+    color: #9affa6 !important;
+    box-shadow: 0px 0px 25px 5px #000000;
+    display: flex;
+    height: 75px;
+}
+
+.navbar a:visited{
+    color: #9affa6;
+}
+
+.navbar a:hover{
+    color: #9affa6;
+}
+
+.navbar-hide{
+    top: -75px;
+}
+
+.navbar > a{
+    color: #525252;
+}
+
+#showNavbar{
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    z-index: 1000;
+}
+
+#playlist{
+    width: 100%;
+    height: 80px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#playlistPlayer{
+    max-height: 80px !important;
+    overflow: hidden;
+}
+
+#playlistButton{
+    color: #9affa6;
+    border: 3px solid #9affa6;
+    border-radius: 5px;
+    background-color: #525252;
+}
+
+#logo{
+    font-family: 'ZCOOL KuaiLe', cursive;
+    vertical-align: middle;
+    display: flex;
+}
+
+/* stylesheet odpowiedzialny za kwadratowe pola tekstowe */
+.poleTekstowe{
+    color: #525252;
+    /* robimy z tego kwadracik tym */
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    /* wyrównanie tekstu */
+    justify-content: center;
+    align-items: center;
+}
+
+/* to odopwiada za utrzymanie kwadratowych pól tekstowych */
+.poleTekstowe::before{
+    content:"";
+    display: block;
+    padding-top: 100%;
+    float: left;
+}
+
+.poleTekstowe h1{
+    /* animacje */
+    color: #525252;
+    -webkit-transition: color 500ms ease, background-color 500ms ease;
+    transition: color 500ms ease, background-color 500ms ease;
+    /* font-size: 2rem; */
+    font-size: calc(45px + (60 - 45) * ((100vw - 100px) / (1600 - 100)));
+    /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+}
+
+.poleTekstowe h1:hover{
+    color: #9affa6;
+    background-color: #525252;
+}
+
+.spotifyPlayerBox{
+    color: #525252;
+    /* robimy z tego kwadracik tym */
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    /* wyrównanie tekstu */
+    justify-content: center;
+    align-items: center;
+}
+
+/* to odopwiada za utrzymanie kwadratowych pól tekstowych */
+.spotifyPlayerBox::before{
+    content:"";
+    display: block;
+    padding-top: 100%;
+    float: left;
+}
+
+
+#spotifyPlayer1{
+    background-image: url("../img/gl-photo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#spotifyPlayer2{
+    background-image: url("../img/phone.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#spotifyPlayer3{
+    background-image: url("../img/zombie.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.spotifyPlayer{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease, background-color 500ms ease;  
+}
+
+.spotifyPlayer:hover{
+    opacity: 1.0;
+}
+
+#header{
+    /* tekst */
+    font-family: 'Russo One', sans-serif;
+    padding: 0px;
+    /* ramka i druga ramka */
+    border-style: solid;
+    border-width: 25px;
+    border-color: #525252;
+    border-radius: 5px;
+}
+
+#octagon{
+    color: #9affa6;
+    background-color: #525252; 
+    transform: rotate(45deg);
+    /* robimy z tego kwadracik tym */
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    /* wyrównanie tekstu */
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease;
+}
+
+#octagon:hover{
+    transform: rotate(0deg)
+}
+
+#octagonBg{
+    overflow: hidden;
+    padding: 0;
+}
+
+#octagonText{
+    transform: rotate(-45deg);
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+}
+
+#descGradient{
+    /* background-image: linear-gradient(to right, #525252 , #9affa6); */
+    background-image: radial-gradient(farthest-corner at left top, #9affa6 2%, #525252);
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#descText{
+    text-align: justify;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #9affa6;
+}
+
+/* to odopwiada za utrzymanie kwadratowych pól tekstowych */
+#octagon:before{
+    content:"";
+    display: block;
+    padding-top: 100%;
+    float: left;
+}
+
+/* usuwa scrollbar poziomy */
+.container-fluid .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* rzeczy do stopki z logo Borutzki™ */
+#stopka{
+    /* object-fit: center; */
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    height: 2em;
+}
+
+#stopka img{
+    height: 1.5em;
+}
+
+#koniecStrony{
+    width:  100%;
+    height: 70px;
+    background: linear-gradient(#9affa6 10%, #525252 90%);
+}
