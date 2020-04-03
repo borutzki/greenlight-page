@@ -3,14 +3,6 @@ kolory:
 szary: 525252
 zielonkawy: 9affa6
 
-tasklista: 
-
--zrobić cień rzucany przez navbar
--gradientowy lub przezroczysty kolorek navbara
-
-*/
-
-
 /* 
 czcionki
 font-family: 'ZCOOL KuaiLe', cursive;
@@ -95,6 +87,7 @@ body{
     font-family: 'ZCOOL KuaiLe', cursive;
     vertical-align: middle;
     display: flex;
+    color: 9affa6;
 }
 
 /* stylesheet odpowiedzialny za kwadratowe pola tekstowe */
